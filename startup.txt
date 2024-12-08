@@ -1,0 +1,13 @@
+#Terminal 1
+
+py -m venv .venv
+.venv\bin\activate
+pip install .\backend\requirements.txt
+python.exe -m pip install --upgrade pip   
+cd .\backend\
+flask --app .\app\app.py run
+
+##Terminal 2
+cd .\frontend\DRS_frontend
+npm install
+ng serve

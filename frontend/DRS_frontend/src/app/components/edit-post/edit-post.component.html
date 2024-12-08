@@ -1,0 +1,63 @@
+<div class="container py-5">
+  <div class="text-center mb-4">
+    <h3 class="fw-bold text-warning">Edit Post</h3>
+    <p class="text-muted">Make changes to your post below</p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <!-- Image Preview -->
+      <div class="mb-4 text-center">
+        <img
+          *ngIf="imagePreview"
+          [src]="imagePreview"
+          class="img-fluid rounded shadow-sm"
+          alt="Image Preview"
+          id="image_path"
+        />
+        <!-- If no new image, display the old one -->
+        <img
+          *ngIf="!imagePreview && post.post_id"
+          [src]="'http://localhost:5000/post/post-image/' + post.post_id"
+          class="img-fluid rounded shadow-sm"
+          alt="Image Preview"
+          id="image_path"
+          style="max-height: 400px; max-width: 300px;"
+        />
+      </div>
+
+      <!-- Text Input -->
+  
+
+      <div class="form-floating">
+        <textarea class="form-control"    placeholder="be creative"     [(ngModel)]="post.txt"
+        placeholder="Leave a comment here" id="txt" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Your comment here</label>
+      </div>
+
+      <!-- Buttons -->
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- File Input -->
+        <input
+          type="file"
+          (change)="onImageSelected($event)"
+          id="image-input"
+          name="image"
+          style="display: none"
+          accept="image/*"
+        />
+        <button
+          class="btn btn-primary px-4"
+          (click)="triggerFileInput()"
+        >
+          Change Image
+        </button>
+
+        <!-- Save Edit Button -->
+        <button class="btn btn-success px-4" (click)="onSaveEdit()">
+          Save 
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

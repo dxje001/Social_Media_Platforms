@@ -1,0 +1,54 @@
+<div class="container" style="margin-top: 40px; ">
+  
+  <div class="row">
+    <div class="btn-group" style="width:100%; cursor: pointer; float: left; border: 4px;">
+      <button
+      type="button"
+      (click)="changeTab('search')"
+      class="btn btn-info w-100 mb-2"
+      style="width: 33.3%;"
+    >
+    <i class="bi bi-binoculars"></i>  Search
+    </button>      <button
+    type="button"
+    (click)="changeTab('pending')"
+    class="btn btn-info w-100 mb-2"
+  >
+  <i class="bi bi-list-check"></i>    Pending
+  </button>
+  <button
+  type="button"
+  (click)="changeTab('friends')"
+  class="btn btn-info w-100 mb-2"
+>
+<i class="bi bi-person-vcard"></i>   Friends
+</button>
+    </div>
+    <!-- Left column for buttons -->
+    <div class="col-lg-3 col-md-4 col-sm-12">
+      <div class="button-container">
+        
+        
+        
+      </div>
+    </div>
+
+    <!-- Right column for content -->
+    
+      <div class="content-container">
+        <div *ngIf="currentComponent == 'search'">
+          <app-search-bar></app-search-bar>
+          <app-show-searched-friends></app-show-searched-friends>
+        </div>
+
+        <div *ngIf="currentComponent == 'pending'">
+          <app-pending-friend-requests></app-pending-friend-requests>
+        </div>
+
+        <div *ngIf="currentComponent == 'friends'">
+          <app-my-friends></app-my-friends>
+        </div>
+      </div>
+    
+  </div>
+</div>

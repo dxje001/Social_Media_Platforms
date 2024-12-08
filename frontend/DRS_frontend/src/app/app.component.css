@@ -1,0 +1,17 @@
+.navbar-brand{color: yellowgreen; }
+
+.nav-item{color: yellowgreen;}
+.navbar{position: fixed; 
+    top : 0;
+    width: 100%;
+z-index: 9999;}
+
+.navbar a:hover {
+    
+    color: black;
+    font-weight: bolder;
+  }
+
+  .topnav-right {
+    float: right;
+  }

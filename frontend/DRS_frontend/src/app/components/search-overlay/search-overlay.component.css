@@ -1,0 +1,12 @@
+.overlay-container {
+    border-radius: 0px 0px 32px 32px;
+    min-width: 356px;
+    background: white;
+    padding-bottom: 16px;
+    
+    
+}
+.searchHistory{
+    padding-top: 15px;
+    font-size: 20px;
+}

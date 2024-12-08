@@ -1,0 +1,12 @@
+<div class="container text-center" id="proba">
+  <div class="row">
+    
+    <div class="col-12" *ngIf="isUserAdmin">
+      <app-register></app-register>
+    </div>
+
+    <div class="col-12" *ngIf="!isUserAdmin">
+      <app-my-friends-posts></app-my-friends-posts>
+    </div>
+  </div>
+</div>

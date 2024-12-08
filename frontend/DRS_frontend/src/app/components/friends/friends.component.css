@@ -1,0 +1,83 @@
+/* Media query za uređaje sa širinom ekrana manjom od 425px */
+@media (max-width: 768px) {
+    .button-container  {
+      width: 100%;  /* Dugmadi će zauzimati 100% širine */
+      
+      margin-left: 30px;
+    }
+  }
+  
+
+
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button{
+    background-color:lightpink;
+  }
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color:whitesmoke;
+  }
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-left: 5px;
+  }
+  
+  .col-lg-3, .col-md-4, .col-sm-12 {
+    display: flex;
+    flex-direction: column;  /* Vertikalno poređaj dugmadi */
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;  /* Vertikalno poređaj dugmadi */
+    height: 100%;  /* Puni visinu dostupne kolone */
+    width: 80%;  /* Širina dugmadi unutar kolone */
+     
+    align-items: center;  /* Horizontalno centriranje dugmadi */
+  }
+  
+  
+  .col-lg-9, .col-md-8, .col-sm-12 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-container {
+    flex-grow: 1;  /* Omogućava da desna kolona raste */
+  }
+  
+  .btn {
+    width: 100%;
+    margin-left: 30px;  /* Razmak između dugmadi */
+    margin-right: 30px;
+  }
+  
+  .app-search-bar, .app-show-searched-friends {
+    margin-top: 20px;
+  }
+  
+
+  .button-container {
+    position: sticky;
+    top: 0;
+  }
+
+
+ 
+  

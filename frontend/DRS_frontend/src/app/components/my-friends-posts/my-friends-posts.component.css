@@ -1,0 +1,6 @@
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+.card {
+    background-color: rgb(255 255 255 / 15%);;
+}

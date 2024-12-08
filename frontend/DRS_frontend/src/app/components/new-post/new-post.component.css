@@ -1,0 +1,24 @@
+.form-control {
+    width: 100%;
+    background-color: rgb(255 255 255 / 15%);;
+}
+
+.form-floating{
+    width: 100%;
+}
+.img-fluid {
+    size: 20px;
+}
+
+#image_path {
+        height: 100%;
+        width: 100%;
+      }
+
+#ccc2{
+    object-fit: contain;
+      } 
+      
+#j2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
