@@ -12,13 +12,13 @@ SECRET_KEY = 'your_secret_key_here'
 def send_email_task(app,email, username, password):
     with app.app_context():  # Push the application context
         msg = Message(
-            'Welcome to Our App',
+            'Welcome to Our Social Media Platform',
             recipients=[email]
         )
         msg.body = f"""
         Hi {username},
 
-        Welcome to our app! Here are your login details:
+        Welcome to our social media platform! Here are your login details:
 
         Username: {username}
         Password: {password}
@@ -26,7 +26,7 @@ def send_email_task(app,email, username, password):
         Please keep this information safe.
 
         Best regards,
-        Your App Team
+        Your Admin
         """
         mail.send(msg)
 
@@ -42,7 +42,7 @@ def send_email_task_to_admin(app, username):
         Username: {username}
 
         Best regards,
-        Your App Team
+        Me, Myself and I
         """
         mail.send(msg)
 
