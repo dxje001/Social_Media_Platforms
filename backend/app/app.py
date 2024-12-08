@@ -26,7 +26,7 @@ def create_app():
     app.config['MAIL_USE_TLS'] = True
     app.config['MAIL_USE_SSL '] = False
     app.config['MAIL_USERNAME'] = 'sreckomarinkovic000@gmail.com'  # Postavite vaš email
-    app.config['MAIL_PASSWORD'] = 'ovojesifra123'  # Postavite vašu lozinku
+    app.config['MAIL_PASSWORD'] = 'rssw cbpe uten qjgh'  # Postavite vašu lozinku
     app.config['MAIL_DEFAULT_SENDER'] = 'sreckomarinkovic000@gmail.com'
 
     db.init_app(app)
