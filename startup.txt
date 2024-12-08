@@ -1,8 +1,8 @@
 #Terminal 1
 
 py -m venv .venv
-.venv\bin\activate
-pip install .\backend\requirements.txt
+.\.venv\Scripts\activate
+pip install -r .\backend\requirements.txt
 python.exe -m pip install --upgrade pip   
 cd .\backend\
 flask --app .\app\app.py run
