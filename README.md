@@ -8,9 +8,9 @@ The **DRS Social Network** is a simulation project designed to mimic the functio
 3. **Database (DB)**  
 
 ## Key Technologies
-- **Frontend/UI:** Flask Web Application
-- **Backend/Engine:** Flask API Application with RESTful endpoints
-- **Database:** SQL or NoSQL database (SQLite not allowed)
+- **Frontend/UI:** Angular, CSS, HTML, TypeScript
+- **Backend/Engine:** Flask API Application with RESTful endpoints 
+- **Database:** MySQL
 - **Real-Time Communication:** WebSocket for live updates
 - **Email Notifications:** Automated email functionality for registration, notifications, and status updates.
 
