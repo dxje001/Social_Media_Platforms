@@ -1,7 +1,7 @@
-# DRES - Social Network Simulation
+# DRS - Social Network Simulation
 
 ## Overview
-The **DRES Social Network** is a simulation project designed to mimic the functionalities of modern social networks. It includes features for user registration, authentication, friend management, and post creation with administrative oversight. The system is implemented with three core components: 
+The **DRS Social Network** is a simulation project designed to mimic the functionalities of modern social networks. It includes features for user registration, authentication, friend management, and post creation with administrative oversight. The system is implemented with three core components: 
 
 1. **User Interface (UI)**  
 2. **Service for Request and Data Processing (Engine)**  
