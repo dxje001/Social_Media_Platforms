@@ -91,5 +91,20 @@ The database type is flexible (SQL or NoSQL) but must exclude SQLite.
 1. Clone the repository.
 2. Set up the database schema.
 3. Install the required Python dependencies:  
+
+* Terminal 1
+  ```bash
+    py -m venv .venv
+    .\.venv\Scripts\activate
+    pip install -r .\backend\requirements.txt
+    python.exe -m pip install --upgrade pip   
+    cd .\backend\
+    flask --app .\app\app.py run
+
+* Terminal 2 
    ```bash
-   pip install -r requirements.txt
+   cd .\frontend\DRS_frontend
+  npm install
+  ng serve
+
+
